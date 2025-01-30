@@ -1,0 +1,40 @@
+{
+    "name": "skills-copilot-extension",
+    "displayName": "Skills Copilot Extension",
+    "description": "A VS Code extension demonstrating Copilot skills",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:skills-copilot-extension.calculateNumbers"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "skills-copilot-extension.calculateNumbers",
+                "title": "Calculate Numbers"
+            }
+        ]
+    },
+    "scripts": {
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "@types/vscode": "^1.85.0",
+        "eslint": "^8.56.0",
+        "typescript": "^5.3.3"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "vscode": "^1.1.37"
+    }
+}
